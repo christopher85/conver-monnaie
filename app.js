@@ -10,7 +10,9 @@ function recupValeur(){
             var fromAmount = document.querySelector('#fromAmount').value;
             var from = document.querySelector('#from').value;
             var to = document.querySelector('#to').value;
-            console.log(to);
+            var result = fromAmount * rates[to] /rates[from];
+            // console.log(result);
+            document.querySelector('#toAmount').value = result;
         }
     })
             
