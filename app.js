@@ -5,11 +5,13 @@ function recupValeur(){
     $.ajax({
         url : url,
         type : "GET",
-        success : function (res, status, req){
-            console.log("res:", res. rates.USD);
-            console.log("req:", req);
-        }//callback
-        
-         
+        success : function (res, status, req){   //callback
+            var rates = res.rates;
+            var fromAmount = document.querySelector('#fromAmount').value;
+            var from = document.querySelector('#from').value;
+            var to = document.querySelector('#to').value;
+            console.log(to);
+        }
     })
+            
 }
